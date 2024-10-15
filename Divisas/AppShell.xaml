@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Divisas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Divisas"
+    xmlns:views="clr-namespace:Divisas.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Divisas">
+
+    <TabBar>
+        <Tab Title="Inicio" Icon="currency.png">
+            <ShellContent ContentTemplate="{DataTemplate views:ListaDivisas}" />
+        </Tab>
+        <Tab Title="Operaciones" Icon="currency.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Operaciones}" />
+        </Tab>
+        <Tab Title="Configuración" Icon="currency.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Configuracion}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
