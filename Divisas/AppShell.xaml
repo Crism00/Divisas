@@ -7,15 +7,15 @@
     xmlns:views="clr-namespace:Divisas.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="Divisas">
-
+    
     <TabBar>
-        <Tab Title="Inicio" Icon="currency.png">
+        <Tab Title="Inicio" Icon="home.png">
             <ShellContent ContentTemplate="{DataTemplate views:ListaDivisas}" />
         </Tab>
-        <Tab Title="Operaciones" Icon="currency.png">
+        <Tab Title="Operaciones" Icon="buysell.png">
             <ShellContent ContentTemplate="{DataTemplate views:Operaciones}" />
         </Tab>
-        <Tab Title="Configuración" Icon="currency.png">
+        <Tab Title="Configuración" Icon="configuration.png">
             <ShellContent ContentTemplate="{DataTemplate views:Configuracion}" />
         </Tab>
     </TabBar>
