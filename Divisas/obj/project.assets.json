@@ -2463,7 +2463,7 @@
         }
       }
     },
-    "net8.0-android34.0/android-arm": {
+    "net8.0-android34.0/iossimulator-arm64": {
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -4925,6 +4925,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "net8.0-android34.0/android-arm64": {
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -19848,6 +19849,9 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+=======
+    "net8.0-ios18.0": {
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -20354,6 +20358,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "net8.0-ios18.0/android-arm": {
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
@@ -20505,6 +20510,9 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+=======
+    "net8.0-ios18.0/iossimulator-arm64": {
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21011,6 +21019,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "net8.0-ios18.0/android-arm64": {
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
@@ -25104,6 +25113,9 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+=======
+    "net8.0-maccatalyst18.0": {
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25680,6 +25692,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "net8.0-maccatalyst18.0/android-arm": {
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
@@ -25831,6 +25844,9 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+=======
+    "net8.0-maccatalyst18.0/iossimulator-arm64": {
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26327,6 +26343,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       }
+<<<<<<< Updated upstream
     },
     "net8.0-maccatalyst18.0/android-arm64": {
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -36547,6 +36564,8 @@
           "lib/netcoreapp2.1/_._": {}
         }
       }
+=======
+>>>>>>> Stashed changes
     }
   },
   "libraries": {
@@ -37101,52 +37120,6 @@
         "microsoft.extensions.primitives.8.0.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Graphics.Win2D/1.2.0": {
-      "sha512": "7bAo8ObjCy/br0eW0nONRfVKehJu5aDe/KQekWeNXslwTOO2rhrIfWaVGepsXyVqmqwHoLJ31g1HsT7FLdBCoQ==",
-      "type": "package",
-      "path": "microsoft.graphics.win2d/1.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Win2d.githash.txt",
-        "build/Win2D.common.targets",
-        "build/native/Microsoft.Graphics.Win2D.targets",
-        "build/net45/Microsoft.Graphics.Win2D.targets",
-        "build/net6.0-windows10.0.19041.0/Microsoft.Graphics.Win2D.targets",
-        "build/win10/Microsoft.Graphics.Win2D.targets",
-        "icon.png",
-        "include/Microsoft.Graphics.Canvas.native.h",
-        "include/arm64/Microsoft.Graphics.Canvas.h",
-        "include/x64/Microsoft.Graphics.Canvas.h",
-        "include/x86/Microsoft.Graphics.Canvas.h",
-        "lib/net45/Microsoft.Graphics.Canvas.winmd",
-        "lib/net6.0-windows10.0.19041.0/Microsoft.Graphics.Canvas.Interop.dll",
-        "lib/uap10.0/Microsoft.Graphics.Canvas.winmd",
-        "microsoft.graphics.win2d.1.2.0.nupkg.sha512",
-        "microsoft.graphics.win2d.nuspec",
-        "runtimes/win-arm64/native/Microsoft.Graphics.Canvas.dll",
-        "runtimes/win-x64/native/Microsoft.Graphics.Canvas.dll",
-        "runtimes/win-x86/native/Microsoft.Graphics.Canvas.dll"
-      ]
-    },
-    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
-      "sha512": "s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
-      "type": "package",
-      "path": "microsoft.io.recyclablememorystream/3.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
-        "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
-        "microsoft.io.recyclablememorystream.nuspec"
       ]
     },
     "Microsoft.Maui.Controls/8.0.82": {
@@ -37912,29 +37885,6 @@
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.82": {
-      "sha512": "IVBp8HvYMKdpJP/hBeJhzd7LeIM9UXOMdhqr/YXAs0XP8PUWp7VSGEVzhvQEexY0fKaBbKdi+dghbJUxfu4aGw==",
-      "type": "package",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/8.0.82",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
-        "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
-        "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
-        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
-        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "microsoft.maui.graphics.win2d.winui.desktop.8.0.82.nupkg.sha512",
-        "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
-      ]
-    },
     "Microsoft.Maui.Resizetizer/8.0.82": {
       "sha512": "TlWHxNzHvOpILEP3W+8asTaLZAlkISIPFJHY5/ckD9NuHu1vAb2YNsIVkjRe5YxthJQShTbbRFtzhf4sHryp9g==",
       "type": "package",
@@ -38044,6 +37994,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< Updated upstream
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
       "sha512": "7ZL2sFSioYm1Ry067Kw1hg0SCcW5kuVezC2SwjGbcPE61Nn+gTbH86T73G3LcEOVj0S3IZzNuE/29gZvOLS7VA==",
       "type": "package",
@@ -39115,6 +39066,8 @@
         "useSharedDesignerContext.txt"
       ]
     },
+=======
+>>>>>>> Stashed changes
     "Xamarin.Android.Glide/4.15.1.2": {
       "sha512": "DcekP+BXm4jFMV7zjHEltj01uiXcItq1kjGa79pj/Vx1rk3Ac2VXdmwGw06HXDP8n2XZsDh8dAoSI48G4KODRA==",
       "type": "package",
@@ -41162,18 +41115,25 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.0"
     ],
     "net8.0-ios18.0": [
+<<<<<<< Updated upstream
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
+=======
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0"
     ],
     "net8.0-maccatalyst18.0": [
+<<<<<<< Updated upstream
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
+=======
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0"
+<<<<<<< Updated upstream
     ],
     "net8.0-windows10.0.19041": [
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
@@ -41184,10 +41144,17 @@
   },
   "packageFolders": {
     "C:\\Users\\beren\\.nuget\\packages\\": {}
+=======
+    ]
+  },
+  "packageFolders": {
+    "/Users/isradiosh/.nuget/packages/": {}
+>>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
       "projectName": "Divisas",
       "projectPath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
@@ -41197,15 +41164,25 @@
       "crossTargeting": true,
       "configFilePaths": [
         "C:\\Users\\beren\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj",
+      "projectName": "Divisas",
+      "projectPath": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj",
+      "packagesPath": "/Users/isradiosh/.nuget/packages/",
+      "outputPath": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/obj/",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "configFilePaths": [
+        "/Users/isradiosh/.nuget/NuGet/NuGet.Config"
+>>>>>>> Stashed changes
       ],
       "originalTargetFrameworks": [
         "net8.0-android",
         "net8.0-ios",
-        "net8.0-maccatalyst",
-        "net8.0-windows10.0.19041.0"
+        "net8.0-maccatalyst"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -41219,10 +41196,6 @@
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
-          "projectReferences": {}
-        },
-        "net8.0-windows10.0.19041": {
-          "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {}
         }
       },
@@ -41278,7 +41251,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       },
       "net8.0-ios18.0": {
         "targetAlias": "net8.0-ios",
@@ -41325,7 +41302,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       },
       "net8.0-maccatalyst18.0": {
         "targetAlias": "net8.0-maccatalyst",
@@ -41373,6 +41354,7 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-windows10.0.19041": {
@@ -41421,28 +41403,13 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       }
     },
     "runtimes": {
-      "android-arm": {
-        "#import": []
-      },
-      "android-arm64": {
-        "#import": []
-      },
-      "android-x64": {
-        "#import": []
-      },
-      "android-x86": {
-        "#import": []
-      },
-      "iossimulator-x64": {
-        "#import": []
-      },
-      "maccatalyst-x64": {
-        "#import": []
-      },
-      "win10-x64": {
+      "iossimulator-arm64": {
         "#import": []
       }
     }

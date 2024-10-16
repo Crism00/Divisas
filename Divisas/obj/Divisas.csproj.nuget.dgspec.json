@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj": {}
   },
   "projects": {
@@ -16,15 +17,31 @@
         "crossTargeting": true,
         "configFilePaths": [
           "C:\\Users\\beren\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj": {}
+  },
+  "projects": {
+    "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj",
+        "projectName": "Divisas",
+        "projectPath": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj",
+        "packagesPath": "/Users/isradiosh/.nuget/packages/",
+        "outputPath": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/isradiosh/.nuget/NuGet/NuGet.Config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "net8.0-android",
           "net8.0-ios",
-          "net8.0-maccatalyst",
-          "net8.0-windows10.0.19041.0"
+          "net8.0-maccatalyst"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,10 +55,6 @@
           },
           "net8.0-maccatalyst18.0": {
             "targetAlias": "net8.0-maccatalyst",
-            "projectReferences": {}
-          },
-          "net8.0-windows10.0.19041": {
-            "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {}
           }
         },
@@ -97,7 +110,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
         },
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
@@ -144,7 +161,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
@@ -192,6 +213,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
@@ -240,28 +262,13 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
         }
       },
       "runtimes": {
-        "android-arm": {
-          "#import": []
-        },
-        "android-arm64": {
-          "#import": []
-        },
-        "android-x64": {
-          "#import": []
-        },
-        "android-x86": {
-          "#import": []
-        },
-        "iossimulator-x64": {
-          "#import": []
-        },
-        "maccatalyst-x64": {
-          "#import": []
-        },
-        "win10-x64": {
+        "iossimulator-arm64": {
           "#import": []
         }
       }
