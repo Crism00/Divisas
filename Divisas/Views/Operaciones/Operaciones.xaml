@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Divisas.Views.Operaciones"
-             Title="Operaciones">
+             BackgroundColor="#F3F4F6">
     <ScrollView>
-        <StackLayout Padding="20">
+        <StackLayout Padding="30">
             <!-- Título -->
-            <Label Text="Operación de Cambio"
-                   FontSize="Large"
+            <Label Text="OPERACIÓN DE CAMBIO"
+                   FontSize="20"
                    HorizontalOptions="Center"
                    VerticalOptions="Start"
-                   Margin="0,20,0,10"
+                   Margin="0,40,0,20"
                    FontAttributes="Bold"
                    TextColor="Black"/>
 
@@ -18,8 +18,11 @@
             <Frame BackgroundColor="White"
                    CornerRadius="20"
                    Padding="20"
-                   HorizontalOptions="Center"
-                   HasShadow="True">
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"
+                   HasShadow="True"
+                   BorderColor="Transparent"
+                   Margin="0,0,0,10">
                 <StackLayout>
                     <Grid Padding="0,0,0,15">
                         <Grid.ColumnDefinitions>
@@ -27,99 +30,72 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Button Text="Compra"
+                        <!-- Botón de Compra -->
+                        <Button Grid.Column="0"
+                                Text="Compra"
                                 BackgroundColor="#00CFC1"
                                 TextColor="White"
-                                CornerRadius="10"
-                                Grid.Column="0"
-                                HorizontalOptions="FillAndExpand"/>
+                                CornerRadius="20"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Clicked="OnCompraClicked"/>
 
-                        <Button Text="Venta"
+                        <!-- Botón de Venta -->
+                        <Button Grid.Column="1"
+                                Text="Venta"
                                 BackgroundColor="#E8E8E8"
                                 TextColor="Black"
-                                CornerRadius="10"
-                                Grid.Column="1"
-                                HorizontalOptions="FillAndExpand"/>
+                                CornerRadius="20"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Clicked="OnVentaClicked"/>
                     </Grid>
 
-                    <!-- Selectores de Moneda -->
-                    <Grid Padding="0,10">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
+                    <!-- Contenido dinámico -->
+                    <ContentView x:Name="ContentArea">
+                        <!-- Contenido inicial de Compra -->
+                        <StackLayout Spacing="10">
+                            <!-- Cantidad -->
+                            <StackLayout>
+                                <Label Text="Cantidad USD:" FontSize="Small" TextColor="Black"/>
+                                <Grid>
+                                    <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
+                                    <Entry Text="0.00" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="USD" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
+                                </Grid>
+                            </StackLayout>
 
-                        <StackLayout Grid.Column="0">
-                            <Label Text="De:" FontSize="Small" TextColor="Black"/>
-                            <Picker Title="USD">
-                                <Picker.ItemsSource>
-                                    <x:Array Type="{x:Type x:String}">
-                                        <x:String>USD</x:String>
-                                        <x:String>EUR</x:String>
-                                        <x:String>MXN</x:String>
-                                        <x:String>JPY</x:String>
-                                    </x:Array>
-                                </Picker.ItemsSource>
-                            </Picker>
+                            <!-- Tipo de Cambio -->
+                            <StackLayout>
+                                <Label Text="Tipo de Cambio:" FontSize="Small" TextColor="Black"/>
+                                <Grid>
+                                    <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
+                                    <Entry Text="0.00" IsReadOnly="True" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="USD/MXN" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
+                                </Grid>
+                            </StackLayout>
+
+                            <!-- Total MXN -->
+                            <StackLayout>
+                                <Label Text="Total MXN:" FontSize="Small" TextColor="Black"/>
+                                <Grid>
+                                    <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
+                                    <Entry Text="0.00" IsReadOnly="True" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="MXN" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
+                                </Grid>
+                            </StackLayout>
+
+                            <!-- Botón de Realizar Compra -->
+                            <Button Text="Realizar Compra"
+                                    BackgroundColor="#00CFC1"
+                                    TextColor="White"
+                                    CornerRadius="10"
+                                    HeightRequest="50"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="FillAndExpand"
+                                    Margin="0,20,0,0"/>
                         </StackLayout>
-
-                        <StackLayout Grid.Column="1">
-                            <Label Text="A:" FontSize="Small" TextColor="Black"/>
-                            <Picker Title="MXN">
-                                <Picker.ItemsSource>
-                                    <x:Array Type="{x:Type x:String}">
-                                        <x:String>USD</x:String>
-                                        <x:String>EUR</x:String>
-                                        <x:String>MXN</x:String>
-                                        <x:String>JPY</x:String>
-                                    </x:Array>
-                                </Picker.ItemsSource>
-                            </Picker>
-                        </StackLayout>
-                    </Grid>
-
-                    <!-- Información de la Transacción -->
-                    <StackLayout Spacing="10">
-                        <!-- Cantidad -->
-                        <StackLayout>
-                            <Label Text="Cantidad USD:" FontSize="Small" TextColor="Black"/>
-                            <Grid>
-                                <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
-                                <Entry Text="0.00" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
-                                <Label Text="USD" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
-                            </Grid>
-                        </StackLayout>
-
-                        <!-- Tipo de Cambio -->
-                        <StackLayout>
-                            <Label Text="Tipo de Cambio:" FontSize="Small" TextColor="Black"/>
-                            <Grid>
-                                <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
-                                <Entry Text="0.00" IsReadOnly="True" HorizontalOptions="FillAndExpand"/>
-                                <Label Text="USD/MXN" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
-                            </Grid>
-                        </StackLayout>
-
-                        <!-- Total MXN -->
-                        <StackLayout>
-                            <Label Text="Total MXN:" FontSize="Small" TextColor="Black"/>
-                            <Grid>
-                                <Label Text="$" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"/>
-                                <Entry Text="0.00" IsReadOnly="True" HorizontalOptions="FillAndExpand"/>
-                                <Label Text="MXN" VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
-                            </Grid>
-                        </StackLayout>
-                    </StackLayout>
-
-                    <!-- Botón de Realizar Compra -->
-                    <Button Text="Realizar Compra"
-                            BackgroundColor="#00CFC1"
-                            TextColor="White"
-                            CornerRadius="10"
-                            HeightRequest="50"
-                            FontAttributes="Bold"
-                            HorizontalOptions="FillAndExpand"
-                            Margin="0,20,0,0"/>
+                    </ContentView>
                 </StackLayout>
             </Frame>
         </StackLayout>
