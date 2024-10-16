@@ -1,4 +1,73 @@
-/Divisas/bin
-/Divisas/obj
-/Divisas/obj/*
-Divisas/obj/Debug/net8.0-android/Divisas.csproj.AssemblyReference.cache
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.userprefs
+*.user
+*.suo
+*.sln.docstates
+
+# SDK-specific directories
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# macOS generated files
+*.DS_Store
+
+# Windows generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore crash/hang dumps
+*.pid
+*.dmp
+*.log
+
+# JetBrains Rider
+.idea/
+
+# Ignore Xamarin/Maui-related files
+.idea/
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.pbxproj
+*.plist
+*.maui.devproperties
+*.maui.csproj.user
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Visual Studio Code
+.vscode/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Ignore environment settings
+.env
+
+# Android build files
+**/Resources/Resource.designer.cs
+**/Resources/Resource*.cs
+
+# iOS build files
+DerivedData/
+.idea/
+xcuserdata/
+*.xcworkspace
+*.xcodeproj
+
+# Maui specific
+AppPackages/
