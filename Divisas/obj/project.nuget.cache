@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LtrNa6pQrXsJnbBrIaaftndnGqrNIR5YWAf/YJeAGfe+SKhSRyh3x67gQWCYbjCFToqja7lWFwj3QeJTkRO/KA==",
+  "dgSpecHash": "2YcxHmVdrgsI93/uEEPljOEvRY3Ge6Pq8Gysem9w+XRFEygN5I0C5RREfUJi7jei+vsXfDjrbz+FgkJ/OzFddQ==",
   "success": true,
   "projectFilePath": "/Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/Divisas.csproj",
   "expectedPackageFiles": [
@@ -34,13 +34,16 @@
     "/Users/isradiosh/.nuget/packages/microsoft.maui.graphics/8.0.82/microsoft.maui.graphics.8.0.82.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/microsoft.maui.resizetizer/8.0.82/microsoft.maui.resizetizer.8.0.82.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/microsoft.net.illink.tasks/8.0.0/microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
+    "/Users/isradiosh/.nuget/packages/sqlite-net-pcl/1.9.172/sqlite-net-pcl.1.9.172.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/isradiosh/.nuget/packages/sqlitepclraw.bundle_green/2.1.2/sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.lib.e_sqlite3.android/2.1.6/sqlitepclraw.lib.e_sqlite3.android.2.1.6.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.lib.e_sqlite3.ios/2.1.6/sqlitepclraw.lib.e_sqlite3.ios.2.1.6.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/sqlitepclraw.provider.internal/2.1.6/sqlitepclraw.provider.internal.2.1.6.nupkg.sha512",
+    "/Users/isradiosh/.nuget/packages/sqlitepclraw.provider.sqlite3/2.1.2/sqlitepclraw.provider.sqlite3.2.1.2.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
@@ -129,5 +132,12 @@
     "/Users/isradiosh/.nuget/packages/xamarin.kotlinx.coroutines.android/1.7.2.1/xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
     "/Users/isradiosh/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.7.2.1/xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché /Users/isradiosh/Documents/10C/APPINT/Divisas/Divisas/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
