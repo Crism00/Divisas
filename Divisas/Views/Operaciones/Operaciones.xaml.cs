@@ -48,8 +48,13 @@ namespace Divisas.Views
             compraButton.FontAttributes = FontAttributes.None;
         }
 
-        private void SetCompraContent()
+        private async void SetCompraContent()
         {
+            // Obtén las monedas desde la base de datos
+            var monedas = await App.Database.GetMonedasAsync();
+            var monedaNombres = monedas.Select(m => m.Nombre).ToList();  // Solo usar los códigos de moneda
+
+
             var grid = new Grid
             {
                 Padding = new Thickness(0, 10),
@@ -60,33 +65,42 @@ namespace Divisas.Views
                 }
             };
 
+            var pickerDe = new Picker
+            {
+                Title = "USD",
+                ItemsSource = monedaNombres, // Cargar las monedas en el picker
+                SelectedIndex = 0 // Opcional: Seleccionar el primero por defecto
+            };
+            pickerDe.SelectedIndexChanged += OnMonedaDeChanged; // Agregamos el manejador del evento
+
             var stackLayout1 = new StackLayout
             {
                 Children =
                 {
                     new Label { Text = "De:", FontSize = 12, TextColor = Colors.Black },
-                    new Picker
-                    {
-                        Title = "USD",
-                        ItemsSource = new string[] { "USD", "EUR", "MXN", "JPY" }
-                    }
+                    pickerDe // Agregar el picker con su manejador
                 }
             };
             Grid.SetColumn(stackLayout1, 0);
+
+            var pickerA = new Picker
+            {
+                Title = "MXN",
+                ItemsSource = monedaNombres, // Cargar las monedas en el picker
+                SelectedIndex = 2 // Opcional: Seleccionar por defecto MXN, por ejemplo
+            };
+            pickerA.SelectedIndexChanged += OnMonedaAChanged; // Agregamos el manejador del evento
 
             var stackLayout2 = new StackLayout
             {
                 Children =
                 {
                     new Label { Text = "A:", FontSize = 12, TextColor = Colors.Black },
-                    new Picker
-                    {
-                        Title = "MXN",
-                        ItemsSource = new string[] { "USD", "EUR", "MXN", "JPY" }
-                    }
+                    pickerA // Agregar el picker con su manejador
                 }
             };
             Grid.SetColumn(stackLayout2, 1);
+
 
             grid.Children.Add(stackLayout1);
             grid.Children.Add(stackLayout2);
@@ -159,5 +173,34 @@ namespace Divisas.Views
                 }
             };
         }
+
+        private void OnMonedaDeChanged(object? sender, EventArgs e)
+        {
+            var picker = (Picker)sender!;
+            if (picker.SelectedIndex != -1) // Asegurarse de que se haya seleccionado algo
+            {
+                string selectedMoneda = picker.Items[picker.SelectedIndex];
+                // Actualiza cualquier otro campo o componente con la moneda seleccionada
+                // Por ejemplo, podrías cambiar el título del Picker
+                picker.Title = selectedMoneda;
+
+                Console.WriteLine($"Moneda seleccionada DE: {selectedMoneda}");
+            }
+        }
+
+        private void OnMonedaAChanged(object? sender, EventArgs e)
+        {
+            if (sender is Picker picker)
+            {
+                if (picker.SelectedIndex != -1)
+                {
+                    string selectedMoneda = picker.Items[picker.SelectedIndex];
+                    Console.WriteLine($"Moneda seleccionada A: {selectedMoneda}");
+                    picker.Title = selectedMoneda;
+                }
+            }
+        }
+
+
     }
 }
