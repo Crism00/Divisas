@@ -1,4 +1,4 @@
-﻿namespace Divisas.Models
+﻿namespace Divisas.Database
 {
     public static class ConexionDB
     {

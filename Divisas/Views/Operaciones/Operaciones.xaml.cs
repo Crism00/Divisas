@@ -1,4 +1,4 @@
-using Microsoft.Maui.Controls;
+using Divisas.Controllers;
 
 namespace Divisas.Views
 {
@@ -50,11 +50,12 @@ namespace Divisas.Views
 
         private async void SetCompraContent()
         {
-            // Obtén las monedas desde la base de datos
-            var monedas = await App.Database.GetMonedasAsync();
-            var monedaNombres = monedas.Select(m => m.Nombre).ToList();  // Solo usar los códigos de moneda
+            var monedaRepository = new MonedasController();
 
-
+            // Obtener las monedas desde el repositorio
+            var monedas = await monedaRepository.GetMonedasAsync();
+            var monedaNombres = monedas.Select(m => m.Nombre).ToList();
+            
             var grid = new Grid
             {
                 Padding = new Thickness(0, 10),

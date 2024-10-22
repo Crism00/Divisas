@@ -1,8 +1,7 @@
 using Divisas.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Sqlite;
 
-namespace Divisas.Models
+namespace Divisas.Database
 {
     public class DivisasDbContext : DbContext
     {
@@ -32,20 +31,6 @@ namespace Divisas.Models
                       */
             });
 
-/*
-            modelBuilder.Entity<Operaciones>(entity =>
-            {
-                entity.HasKey(e => e.Id);
-                entity.Property(e => e.Id).IsRequired().ValueGeneratedOnAdd();
-
-                entity.HasOne(e => e.Configuracion)
-                      .WithMany()
-                      .HasForeignKey(e => e.ConfiguracionId)
-                      .IsRequired()
-                      .OnDelete(DeleteBehavior.Cascade);
-            });
-
-*/
             modelBuilder.Entity<TiposCambio>(entity =>
             {
                 entity.HasKey(e => e.Id);

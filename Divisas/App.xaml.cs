@@ -1,46 +1,48 @@
-﻿using Divisas.Models;
-using Divisas.ViewsModels;
+﻿using Divisas.Database;
+using Divisas.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace Divisas;
 
 public partial class App : Application
 {
-	static MonedaDatabase? database;
-	
-	public App()
-	{
-		InitializeComponent();
-		if (Application.Current != null)
-		{
-			Application.Current.UserAppTheme = AppTheme.Light;
-		}
+    static DivisasDbContext? context;
+
+    public App()
+    {
+        InitializeComponent();
+        if (Application.Current != null)
+        {
+            Application.Current.UserAppTheme = AppTheme.Light;
+        }
+
+        // Inicializa el contexto de la base de datos
+        context = new DivisasDbContext();
+        context.Database.EnsureCreated(); // Asegura que la base de datos existe
 
         _ = SeedDatabaseAsync();
-		MainPage = new AppShell();
-	}
-
-	public static MonedaDatabase Database
-    {
-        get
-        {
-            if (database == null)
-            {
-                var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MonedaSQLite.db3");
-                database = new MonedaDatabase(dbPath);
-            }
-            return database;
-        }
+        MainPage = new AppShell();
     }
 
-	private async Task SeedDatabaseAsync()
+    private async Task SeedDatabaseAsync()
 	{
-		var monedasExistentes = await App.Database.GetMonedasAsync();
-		if (monedasExistentes.Count == 0)
+		if (context != null)
 		{
-			// Agrega algunas monedas de ejemplo
-			await App.Database.SaveMonedaAsync(new Monedas { Nombre = "USD", ActivoDivisa = true});
-			await App.Database.SaveMonedaAsync(new Monedas { Nombre = "MXN", ActivoDivisa = true});
-			await App.Database.SaveMonedaAsync(new Monedas { Nombre = "EUR", ActivoDivisa = true});
-			await App.Database.SaveMonedaAsync(new Monedas { Nombre = "JPY", ActivoDivisa = true});
+			var monedasExistentes = await context.Monedas.ToListAsync();
+			if (monedasExistentes.Count == 0)
+			{
+				await context.Monedas.AddAsync(new Monedas { Nombre = "USD", ActivoDivisa = true });
+				await context.Monedas.AddAsync(new Monedas { Nombre = "MXN", ActivoDivisa = true });
+				await context.Monedas.AddAsync(new Monedas { Nombre = "EUR", ActivoDivisa = true });
+				await context.Monedas.AddAsync(new Monedas { Nombre = "JPY", ActivoDivisa = true });
+				await context.SaveChangesAsync(); 
+			}
+		}
+		else
+		{
+			throw new InvalidOperationException("El contexto de la base de datos no se ha inicializado.");
 		}
 	}
+
+
 }
