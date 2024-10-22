@@ -209,9 +209,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
@@ -264,7 +261,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> origin/main
         }
       },
       "runtimes": {
@@ -280,9 +276,6 @@
         "android-x86": {
           "#import": []
         },
-<<<<<<< HEAD
-        "iossimulator-arm64": {
-=======
         "iossimulator-x64": {
           "#import": []
         },
@@ -290,10 +283,6 @@
           "#import": []
         },
         "win10-x64": {
->>>>>>> origin/main
-          "#import": []
-        },
-        "maccatalyst-arm64": {
           "#import": []
         }
       }
