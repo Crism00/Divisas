@@ -3,10 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Divisas.Views.Configuracion"
              Title="Configuracion">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+                 <Frame BorderColor="LightGray" HeightRequest="150" CornerRadius="10" Padding="10">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <!-- <Image Source="default_image.png" HeightRequest="80" /> -->
+                    <Label Text="Drop your image here, or browse"
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                </StackLayout>
+            </Frame>
+              <!-- Campo Nombre del Negocio -->
+            <Entry Placeholder="Nombre del negocio" />
+
+            <!-- Campo Dirección -->
+            <Entry Placeholder="Dirección (Av. Calle 1234, CP 637462, Mex)" />
+
+            <!-- Campo Ciudad -->
+            <Entry Placeholder="Ciudad" />
+
+            <!-- Dropdown Estado -->
+            <Picker Title="Selecciona el Estado">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Coahuila</x:String>
+                        <x:String>Chihuahua</x:String>
+                        <x:String>Nuevo León</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Botón Guardar -->
+            <Button Text="Guardar" BackgroundColor="Teal" TextColor="White" />
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
 </ContentPage>
