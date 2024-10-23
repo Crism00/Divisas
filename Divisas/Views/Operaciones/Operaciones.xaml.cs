@@ -68,7 +68,6 @@ namespace Divisas.Views
 
             var pickerDe = new Picker
             {
-                Title = "USD",
                 ItemsSource = monedaNombres, // Cargar las monedas en el picker
                 SelectedIndex = 0 // Opcional: Seleccionar el primero por defecto
             };
@@ -86,7 +85,6 @@ namespace Divisas.Views
 
             var pickerA = new Picker
             {
-                Title = "MXN",
                 ItemsSource = monedaNombres, // Cargar las monedas en el picker
                 SelectedIndex = 2 // Opcional: Seleccionar por defecto MXN, por ejemplo
             };
