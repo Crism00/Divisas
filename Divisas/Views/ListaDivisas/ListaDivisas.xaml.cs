@@ -7,7 +7,7 @@ public partial class ListaDivisas : ContentPage
 {
     public ListaDivisas()
     {
-        LoadMonedas();
+        //LoadMonedas();
         InitializeComponent();
     }
 
