@@ -4,6 +4,12 @@ namespace Divisas.Views
 {
     public partial class Operaciones : ContentPage
     {
+        private Picker pickerDe;
+        private Picker pickerA;
+
+        private String txtDe = "MXN";
+        private String txtA = "USD";
+        
         public Operaciones()
         {
             InitializeComponent();
@@ -66,12 +72,12 @@ namespace Divisas.Views
                 }
             };
 
-            var pickerDe = new Picker
+            pickerDe = new Picker
             {
                 ItemsSource = monedaNombres, // Cargar las monedas en el picker
-                SelectedIndex = 0 // Opcional: Seleccionar el primero por defecto
+                SelectedIndex = monedaNombres.IndexOf("MXN")
             };
-            pickerDe.SelectedIndexChanged += OnMonedaDeChanged; // Agregamos el manejador del evento
+            pickerDe.SelectedIndexChanged += OnMonedaDeChanged;
 
             var stackLayout1 = new StackLayout
             {
@@ -83,10 +89,10 @@ namespace Divisas.Views
             };
             Grid.SetColumn(stackLayout1, 0);
 
-            var pickerA = new Picker
+            pickerA = new Picker
             {
                 ItemsSource = monedaNombres, // Cargar las monedas en el picker
-                SelectedIndex = 2 // Opcional: Seleccionar por defecto MXN, por ejemplo
+                 SelectedIndex = monedaNombres.IndexOf("USD")
             };
             pickerA.SelectedIndexChanged += OnMonedaAChanged; // Agregamos el manejador del evento
 
@@ -114,14 +120,14 @@ namespace Divisas.Views
                     {
                         Children =
                         {
-                            new Label { Text = "Cantidad USD:", FontSize = 12, TextColor = Colors.Black },
+                            new Label { Text = "Cantidad " + txtDe + ":", FontSize = 12, TextColor = Colors.Black },
                             new Grid
                             {
                                 Children =
                                 {
                                     new Label { Text = "$", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start, TextColor = Colors.Gray },
-                                    new Entry { Text = "0.00", Keyboard = Keyboard.Numeric, HorizontalOptions = LayoutOptions.Fill },
-                                    new Label { Text = "USD", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
+                                    new Entry { Text = "0.00", Keyboard = Keyboard.Numeric, HorizontalOptions = LayoutOptions.Fill, Margin = new Thickness(10, 0, 0, 0) },
+                                    new Label { Text = txtDe, VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
                                 }
                             }
                         }
@@ -136,8 +142,8 @@ namespace Divisas.Views
                                 Children =
                                 {
                                     new Label { Text = "$", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start, TextColor = Colors.Gray },
-                                    new Entry { Text = "0.00", IsReadOnly = true, HorizontalOptions = LayoutOptions.Fill },
-                                    new Label { Text = "USD/MXN", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
+                                    new Entry { Text = "0.00", IsReadOnly = true, HorizontalOptions = LayoutOptions.Fill, Margin = new Thickness(10, 0, 0, 0) },
+                                    new Label { Text = txtDe + "/" + txtA, VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
                                 }
                             }
                         }
@@ -146,14 +152,14 @@ namespace Divisas.Views
                     {
                         Children =
                         {
-                            new Label { Text = "Total MXN:", FontSize = 12, TextColor = Colors.Black },
+                            new Label { Text = "Total " + txtA + ":", FontSize = 12, TextColor = Colors.Black },
                             new Grid
                             {
                                 Children =
                                 {
                                     new Label { Text = "$", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start, TextColor = Colors.Gray },
-                                    new Entry { Text = "0.00", IsReadOnly = true, HorizontalOptions = LayoutOptions.Fill },
-                                    new Label { Text = "MXN", VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
+                                    new Entry { Text = "0.00", IsReadOnly = true, HorizontalOptions = LayoutOptions.Fill, Margin = new Thickness(10, 0, 0, 0) },
+                                    new Label { Text = txtA, VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Colors.Gray }
                                 }
                             }
                         }
@@ -176,12 +182,19 @@ namespace Divisas.Views
         private void OnMonedaDeChanged(object? sender, EventArgs e)
         {
             var picker = (Picker)sender!;
-            if (picker.SelectedIndex != -1) // Asegurarse de que se haya seleccionado algo
+            if (picker.SelectedIndex != -1)
             {
                 string selectedMoneda = picker.Items[picker.SelectedIndex];
-                // Actualiza cualquier otro campo o componente con la moneda seleccionada
-                // Por ejemplo, podrías cambiar el título del Picker
                 picker.Title = selectedMoneda;
+                txtDe = selectedMoneda;
+
+                // Si la moneda seleccionada en 'De' no es MXN, asegurarse de que en 'A' esté MXN
+                if (selectedMoneda != "MXN" && pickerA.SelectedItem?.ToString() != "MXN")
+                {
+                    pickerA.SelectedIndex = pickerA.Items.IndexOf("MXN");
+                }
+
+                ActualizarVista();
 
                 Console.WriteLine($"Moneda seleccionada DE: {selectedMoneda}");
             }
@@ -189,16 +202,72 @@ namespace Divisas.Views
 
         private void OnMonedaAChanged(object? sender, EventArgs e)
         {
-            if (sender is Picker picker)
+            var picker = (Picker)sender!;
+            if (picker.SelectedIndex != -1)
             {
-                if (picker.SelectedIndex != -1)
+                string selectedMoneda = picker.Items[picker.SelectedIndex];
+                picker.Title = selectedMoneda;
+                txtA = selectedMoneda;
+
+                // Si la moneda seleccionada en 'A' no es MXN, asegurarse de que en 'De' esté MXN
+                if (selectedMoneda != "MXN" && pickerDe.SelectedItem?.ToString() != "MXN")
                 {
-                    string selectedMoneda = picker.Items[picker.SelectedIndex];
-                    Console.WriteLine($"Moneda seleccionada A: {selectedMoneda}");
-                    picker.Title = selectedMoneda;
+                    pickerDe.SelectedIndex = pickerDe.Items.IndexOf("MXN");
+                }  
+
+                ActualizarVista();
+
+                Console.WriteLine($"Moneda seleccionada A: {selectedMoneda}");
+            }
+        }
+
+        private void ActualizarVista()
+        {
+            // Actualiza los textos en la vista con los nuevos valores de txtDe y txtA
+            // Puedes acceder a los elementos dentro del ContentArea y actualizar el contenido
+
+            txtDe = pickerDe.Title;
+            txtA = pickerA.Title;
+            foreach (var child in ((StackLayout)ContentArea.Content).Children)
+            {
+                if (child is StackLayout stack)
+                {
+                    var label = stack.Children.OfType<Label>().FirstOrDefault();
+                    if (label != null)
+                    {
+                        if (label.Text.Contains("Cantidad"))
+                        {
+                            label.Text = "Cantidad " + txtDe + ":";
+
+                            var cantidadLabel = stack.Children.OfType<Grid>().FirstOrDefault()?.Children.OfType<Label>().LastOrDefault();
+                            if (cantidadLabel != null)
+                            {
+                                cantidadLabel.Text = txtDe;
+                            }
+                        }
+                        else if (label.Text.Contains("Tipo de Cambio"))
+                        {
+                            var cambioLabel = stack.Children.OfType<Grid>().FirstOrDefault()?.Children.OfType<Label>().LastOrDefault();
+                            if (cambioLabel != null)
+                            {
+                                cambioLabel.Text = txtDe + "/" + txtA;
+                            }
+                        }
+                        else if (label.Text.Contains("Total"))
+                        {
+                            label.Text = "Total " + txtA + ":";
+
+                            var totalLabel = stack.Children.OfType<Grid>().FirstOrDefault()?.Children.OfType<Label>().LastOrDefault();
+                            if (totalLabel != null)
+                            {
+                                totalLabel.Text = txtA;
+                            }
+                        }
+                    }
                 }
             }
         }
+
 
 
     }
