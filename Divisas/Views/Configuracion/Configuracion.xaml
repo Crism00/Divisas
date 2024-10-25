@@ -23,23 +23,23 @@
                 </StackLayout>
             </Frame>
             <Label Text="Nombre del Negocio"/>
-            <Entry Placeholder="Nombre del negocio ..."/>
+            <Entry
+                x:Name="txtBusinessName"
+                Placeholder="Nombre del negocio ..."/>
             <Label Text="Dirección"/>
-            <Entry Placeholder="Dirección (Av. Calle 1234, CP 637462, Mex)"/>
+            <Entry 
+                x:Name="txtAddress"
+                Placeholder="Dirección (Av. Calle 1234, CP 637462, Mex)"/>
             <Label Text="Estado"/>
-            <Picker Title="Selecciona el Estado"
-                    TitleColor="Gray">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Coahuila</x:String>
-                        <x:String>Chihuahua</x:String>
-                        <x:String>Nuevo León</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <Entry
+                x:Name="txtState"
+                 Placeholder="Estado..."/>
             <Label Text="Ciudad"/>
-            <Entry Placeholder="Ciudad..."/>
+            <Entry 
+                x:Name="txtCity"
+                Placeholder="Ciudad..."/>
             <Button Text="Guardar"
+                    Clicked="OnSaveClicked"
                     BackgroundColor="Teal"
                     TextColor="White"/>
         </VerticalStackLayout>

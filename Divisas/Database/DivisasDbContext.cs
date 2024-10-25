@@ -5,7 +5,7 @@ namespace Divisas.Database
 {
     public class DivisasDbContext : DbContext
     {
-        public DbSet<Configuracion> Configuraciones { get; set; }
+        public DbSet<Config> Configuraciones { get; set; }
         //public DbSet<Operaciones> Operaciones { get; set; }
         public DbSet<TiposCambio> TiposCambio { get; set; }
         public DbSet<Monedas> Monedas { get; set; }
@@ -18,7 +18,7 @@ namespace Divisas.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Configuracion>(entity =>
+            modelBuilder.Entity<Config>(entity =>
             {
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Id).IsRequired().ValueGeneratedOnAdd();
