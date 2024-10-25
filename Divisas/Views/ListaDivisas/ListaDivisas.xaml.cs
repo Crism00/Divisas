@@ -1,23 +1,21 @@
 using Divisas.Controllers;
+using Divisas.Models;
 
 namespace Divisas.Views;
 
 public partial class ListaDivisas : ContentPage
 {
-	public List<string> Monedas {get; set;}
     public ListaDivisas()
     {
+        LoadMonedas();
         InitializeComponent();
-        GetTiposDeCambio();
     }
 
-    private async void GetTiposDeCambio()
+    private async void LoadMonedas()
     {
-        var monedaRepository = new MonedasController();
-        // Obtén las monedas desde la base de datos
-        var monedas = await monedaRepository.GetMonedasAsync();
-        var monedaNombres = monedas.Select(m => m.Nombre).ToList();  // Solo usar los nombres de las monedas
-		Monedas = monedaNombres;
-		BindingContext = this;
+        var monedasController = new MonedasController();
+        var monedas = await monedasController.GetMonedasAsync();
+        MonedasCollectionView.ItemsSource = monedas;
+
     }
 }
