@@ -11,5 +11,8 @@ namespace Divisas.Models
         public string? Nombre { get; set; }
 
         public bool ActivoDivisa { get; set; }
+
+        public float V_Compra { get; set; }
+        public float V_Venta { get; set; }
     }
 }

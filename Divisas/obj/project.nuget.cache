@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "de85Eb1dVQiu0BhFS/CWn3ZgD7JfqwN675C4pYdPiJq2pv+U6JH/XkDPqozhDV8xYALktngCgET9ITh5SnXwMA==",
+  "dgSpecHash": "Z4HlmS/hFJ0qhUvdD4gaNqFEq04VGttcMMVpfy812lccj/Uz6zc/duzr6vF1yJx8W1eNMAARBbZPJeCPRjN9vg==",
   "success": true,
   "projectFilePath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\beren\\.nuget\\packages\\communitytoolkit.maui\\9.1.0\\communitytoolkit.maui.9.1.0.nupkg.sha512",
+    "C:\\Users\\beren\\.nuget\\packages\\communitytoolkit.maui.core\\9.1.0\\communitytoolkit.maui.core.9.1.0.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.10\\microsoft.data.sqlite.core.8.0.10.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
@@ -53,6 +55,7 @@
     "C:\\Users\\beren\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "C:\\Users\\beren\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",
@@ -138,12 +141,5 @@
     "C:\\Users\\beren\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
     "C:\\Users\\beren\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

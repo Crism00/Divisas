@@ -17,5 +17,10 @@ namespace Divisas.Controllers
         {
             return await _dbContext.Monedas.ToListAsync();
         }
+
+        public async Task<Monedas?> GetMonedaByNameAsync(string nombre)
+        {
+            return await _dbContext.Monedas.FirstOrDefaultAsync(m => m.Nombre == nombre);
+        }
     }
 }
