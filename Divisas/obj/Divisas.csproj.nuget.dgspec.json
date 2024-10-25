@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj": {}
+    "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj": {
+    "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
+        "projectUniqueName": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj",
         "projectName": "Divisas",
-        "projectPath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
-        "packagesPath": "C:\\Users\\beren\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\obj\\",
+        "projectPath": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj",
+        "packagesPath": "C:\\Users\\Crismoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\beren\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Crismoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-android",
@@ -32,11 +32,11 @@
             "targetAlias": "net8.0-android",
             "projectReferences": {}
           },
-          "net8.0-ios18.0": {
+          "net8.0-ios17.5": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {}
           },
-          "net8.0-maccatalyst18.0": {
+          "net8.0-maccatalyst17.5": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {}
           },
@@ -49,6 +49,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +79,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "sqlite-net-pcl": {
@@ -101,9 +106,9 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-ios18.0": {
+        "net8.0-ios17.5": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
@@ -125,7 +130,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "sqlite-net-pcl": {
@@ -152,9 +157,9 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-maccatalyst18.0": {
+        "net8.0-maccatalyst17.5": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
@@ -176,7 +181,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "sqlite-net-pcl": {
@@ -204,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
@@ -244,7 +249,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.31, 10.0.19041.31]"
+              "version": "[10.0.19041.34, 10.0.19041.34]"
             }
           ],
           "frameworkReferences": {
@@ -255,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

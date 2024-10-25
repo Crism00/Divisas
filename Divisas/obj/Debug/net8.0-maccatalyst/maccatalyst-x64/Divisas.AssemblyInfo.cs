@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Divisas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a80b1af051d7622670451d86a30226107f090a25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+248d9c9127f7af7b996fe13ae303ad9edd5516d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Divisas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Divisas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
