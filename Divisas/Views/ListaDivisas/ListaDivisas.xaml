@@ -1,62 +1,82 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Divisas.Views.ListaDivisas"
              BackgroundColor="#F3F4F6">
-    <VerticalStackLayout Padding="20">
-        <Label Text="LISTA DE DIVISAS"
-            FontSize="20"
-            HorizontalOptions="Center"
-            VerticalOptions="Start"
-            Margin="0,40,0,20"
-            FontAttributes="Bold"
-            TextColor="Black"/>
-        <Frame BackgroundColor="White"
-                    CornerRadius="20"
-                    Padding="20"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Start"
-                    HasShadow="True"
-                    BorderColor="Transparent"
-                    >
-            <VerticalStackLayout Margin="5">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="0" Text="Clave:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
-                    <Entry Grid.Row="0" Grid.Column="1" Placeholder="Clave" />
-                    <Label Grid.Row="1" Grid.Column="0" Text="Valor de compra:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
-                    <Entry Grid.Row="1" Grid.Column="1" Placeholder="Ingresa el valor de compra" />
-                    <Label Grid.Row="2" Grid.Column="0" Text="Valor de venta:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
-                    <Entry Grid.Row="2" Grid.Column="1" Placeholder="Ingresa el valor de venta" />
-                </Grid>
-                <Button Margin="0,10,0,0" Text="Guardar tipo de cambio"></Button>
-            </VerticalStackLayout>
-        </Frame>
-        <Label Text="Divisas"
-            FontSize="20"
-            HorizontalOptions="Center"
-            VerticalOptions="Start"
-            Margin="0,10,0,10"
-            FontAttributes="Bold"
-            TextColor="Black"/>
-        <CollectionView x:Name="MonedasCollectionView">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Orientation="Horizontal" Padding="10">
-                        <Label Text="{Binding Nombre}" FontSize="20"/>
-                        <Label Text="{Binding V_Compra}" FontSize="16" Margin="10,0,0,0"/>
-                        <Label Text="{Binding V_Venta}" FontSize="16" Margin="10,0,0,0"/>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </VerticalStackLayout>
+    <ScrollView> <!-- Agregado ScrollView aquí -->
+        <VerticalStackLayout Padding="20">
+            <Label Text="LISTA DE DIVISAS"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0,40,0,20"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="20"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"
+                   HasShadow="True"
+                   BorderColor="Transparent">
+                <VerticalStackLayout Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/> <!-- Entry ocupa el espacio disponible -->
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Clave:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
+                        <Entry Grid.Row="0" Grid.Column="1" x:Name="NombreEntry" Placeholder="Clave" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="Valor de compra:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
+                        <Entry Grid.Row="1" Grid.Column="1" x:Name="CompraEntry" Keyboard="Numeric" Placeholder="Ingresa el valor de compra" />
+                        <Label Grid.Row="2" Grid.Column="0" Text="Valor de venta:" FontSize="13" TextColor="Black" VerticalOptions="Center"/>
+                        <Entry Grid.Row="2" Grid.Column="1" x:Name="VentaEntry" Keyboard="Numeric" Placeholder="Ingresa el valor de venta" />
+                    </Grid>
+                    <Button x:Name="SaveButton" Clicked="SaveMoneda" Margin="0,10,0,0" Text="Guardar tipo de cambio"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Divisas"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0,10,0,10"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="10"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" 
+                   HasShadow="True"
+                   BorderColor="Transparent">
+                <CollectionView x:Name="MonedasCollectionView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="#E8E8E8" CornerRadius="10" Padding="10" Margin="0,5">
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Label Text="{Binding Nombre}" FontSize="20" VerticalOptions="Center"/>
+                                    <Label Text="{Binding V_Compra}" FontSize="16" Margin="10,0,0,0" VerticalOptions="Center"/>
+                                    <Label Text="{Binding V_Venta}" FontSize="16" Margin="10,0,0,0" VerticalOptions="Center"/>
+
+                                    <!-- Botón para editar la moneda -->
+                                    <Button Text="Editar"
+                                            Clicked="EditMoneda"
+                                            CommandParameter="{Binding .}"
+                                            Margin="10,0,0,0" 
+                                            VerticalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
