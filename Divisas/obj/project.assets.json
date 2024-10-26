@@ -639,7 +639,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -3168,7 +3168,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -5697,7 +5697,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -8226,7 +8226,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -10755,7 +10755,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -13284,7 +13284,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -15813,7 +15813,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18342,7 +18342,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20233,7 +20233,7 @@
         }
       }
     },
-    "net8.0-ios18.0": {
+    "net8.0-ios17.5": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -20241,12 +20241,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -20258,12 +20258,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -20847,7 +20847,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20965,7 +20965,7 @@
         }
       }
     },
-    "net8.0-ios18.0/android-arm": {
+    "net8.0-ios17.5/android-arm": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -20973,12 +20973,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -20990,12 +20990,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -21579,7 +21579,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -21697,7 +21697,7 @@
         }
       }
     },
-    "net8.0-ios18.0/android-arm64": {
+    "net8.0-ios17.5/android-arm64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -21705,12 +21705,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -21722,12 +21722,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -22311,7 +22311,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -22429,7 +22429,7 @@
         }
       }
     },
-    "net8.0-ios18.0/android-x64": {
+    "net8.0-ios17.5/android-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -22437,12 +22437,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -22454,12 +22454,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -23043,7 +23043,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -23161,7 +23161,7 @@
         }
       }
     },
-    "net8.0-ios18.0/android-x86": {
+    "net8.0-ios17.5/android-x86": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -23169,12 +23169,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -23186,12 +23186,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -23775,7 +23775,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -23893,7 +23893,7 @@
         }
       }
     },
-    "net8.0-ios18.0/iossimulator-x64": {
+    "net8.0-ios17.5/iossimulator-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -23901,12 +23901,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -23918,12 +23918,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -24507,7 +24507,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -24625,7 +24625,7 @@
         }
       }
     },
-    "net8.0-ios18.0/maccatalyst-x64": {
+    "net8.0-ios17.5/maccatalyst-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -24633,12 +24633,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -24650,12 +24650,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -25239,7 +25239,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -25357,7 +25357,7 @@
         }
       }
     },
-    "net8.0-ios18.0/win10-x64": {
+    "net8.0-ios17.5/win10-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -25365,12 +25365,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -25382,12 +25382,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -25971,7 +25971,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -26089,7 +26089,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0": {
+    "net8.0-maccatalyst17.5": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -26097,12 +26097,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -26114,12 +26114,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -26703,7 +26703,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -26879,7 +26879,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/android-arm": {
+    "net8.0-maccatalyst17.5/android-arm": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -26887,12 +26887,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -26904,12 +26904,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -27493,7 +27493,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -27590,7 +27590,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/android-arm64": {
+    "net8.0-maccatalyst17.5/android-arm64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -27598,12 +27598,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -27615,12 +27615,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -28204,7 +28204,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -28301,7 +28301,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/android-x64": {
+    "net8.0-maccatalyst17.5/android-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -28309,12 +28309,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -28326,12 +28326,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -28915,7 +28915,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -29012,7 +29012,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/android-x86": {
+    "net8.0-maccatalyst17.5/android-x86": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -29020,12 +29020,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -29037,12 +29037,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -29626,7 +29626,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -29723,7 +29723,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/iossimulator-x64": {
+    "net8.0-maccatalyst17.5/iossimulator-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -29731,12 +29731,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -29748,12 +29748,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -30337,7 +30337,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -30431,7 +30431,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/maccatalyst-x64": {
+    "net8.0-maccatalyst17.5/maccatalyst-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -30439,12 +30439,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -30456,12 +30456,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -31045,7 +31045,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -31142,7 +31142,7 @@
         }
       }
     },
-    "net8.0-maccatalyst18.0/win10-x64": {
+    "net8.0-maccatalyst17.5/win10-x64": {
       "CommunityToolkit.Maui/9.1.0": {
         "type": "package",
         "dependencies": {
@@ -31150,12 +31150,12 @@
           "Microsoft.Maui.Controls": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.dll": {
             "related": ".xml"
           }
         }
@@ -31167,12 +31167,12 @@
           "Microsoft.Maui.Essentials": "8.0.71"
         },
         "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+          "lib/net8.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -31756,7 +31756,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -40300,10 +40300,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.0": {
-      "sha512": "B3etT5XQ2nlWkZGO2m/ytDYrOmSsQG1XNBaM6ZYlX5Ch/tDrMFadr0/mK6gjZwaQc55g+5+WZMw4Cz3m8VEF7g==",
+    "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.0",
+      "path": "microsoft.net.illink.tasks/8.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -40317,7 +40317,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -43543,27 +43543,27 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
       "sqlite-net-pcl >= 1.9.172"
     ],
-    "net8.0-ios18.0": [
+    "net8.0-ios17.5": [
       "CommunityToolkit.Maui >= 9.1.0",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
       "sqlite-net-pcl >= 1.9.172"
     ],
-    "net8.0-maccatalyst18.0": [
+    "net8.0-maccatalyst17.5": [
       "CommunityToolkit.Maui >= 9.1.0",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net8.0-windows10.0.19041": [
@@ -43577,20 +43577,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\beren\\.nuget\\packages\\": {}
+    "C:\\Users\\Crismoo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
+      "projectUniqueName": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj",
       "projectName": "Divisas",
-      "projectPath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\Divisas.csproj",
-      "packagesPath": "C:\\Users\\beren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beren\\OneDrive\\Escritorio\\Divisas\\Divisas\\obj\\",
+      "projectPath": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\Divisas.csproj",
+      "packagesPath": "C:\\Users\\Crismoo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Crismoo\\Documents\\MisRepos\\Divisas\\Divisas\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "C:\\Users\\beren\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Crismoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-android",
@@ -43607,11 +43607,11 @@
           "targetAlias": "net8.0-android",
           "projectReferences": {}
         },
-        "net8.0-ios18.0": {
+        "net8.0-ios17.5": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {}
         },
-        "net8.0-maccatalyst18.0": {
+        "net8.0-maccatalyst17.5": {
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {}
         },
@@ -43624,6 +43624,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -43657,7 +43662,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.0, )",
+            "version": "[8.0.8, )",
             "autoReferenced": true
           },
           "sqlite-net-pcl": {
@@ -43684,9 +43689,9 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
-      "net8.0-ios18.0": {
+      "net8.0-ios17.5": {
         "targetAlias": "net8.0-ios",
         "dependencies": {
           "CommunityToolkit.Maui": {
@@ -43716,7 +43721,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.0, )",
+            "version": "[8.0.8, )",
             "autoReferenced": true
           },
           "sqlite-net-pcl": {
@@ -43743,9 +43748,9 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
-      "net8.0-maccatalyst18.0": {
+      "net8.0-maccatalyst17.5": {
         "targetAlias": "net8.0-maccatalyst",
         "dependencies": {
           "CommunityToolkit.Maui": {
@@ -43775,7 +43780,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.0, )",
+            "version": "[8.0.8, )",
             "autoReferenced": true
           },
           "sqlite-net-pcl": {
@@ -43803,7 +43808,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
@@ -43851,7 +43856,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.19041.31, 10.0.19041.31]"
+            "version": "[10.0.19041.34, 10.0.19041.34]"
           }
         ],
         "frameworkReferences": {
@@ -43862,7 +43867,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
